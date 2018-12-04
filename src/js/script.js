@@ -1,6 +1,21 @@
 const songs = document.getElementsByTagName('audio');
 console.log(songs);
 const div = document.getElementById('contentsongs');
+
+// Fetch de lyrics.json
+const btn = document.getElementById('btn');
+let letras = document.querySelector('#container');
+
+function fetchJson() {
+  fetch('js/lyrics.json')
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+  })
+}
+
+btn.addEventListener('click', fetchJson);
+
 let i;
 let source = i.src;
 
@@ -21,16 +36,3 @@ for ( i of songs){
     console.log(source);
 }
 
-// Fetch de lyrics.json
-const btn = document.getElementById('btn');
-let letras = document.querySelector('#container');
-
-function mostrar() {
-  fetch('js/lyrics.json')
-    .then(res => res.json())
-    .then(data => {
-      console.log(data);
-  })
-}
-
-btn.addEventListener('click', mostrar);
