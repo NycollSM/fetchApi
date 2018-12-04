@@ -2,13 +2,23 @@
 const songs = document.getElementsByTagName('audio');
 console.log(songs);
 const div = document.getElementById('contentsongs');
+
+// Fetch de lyrics.json
+const btn = document.getElementById('btn');
+
+function fetchJson() {
+  fetch('js/lyrics.json')
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+    })
+}
+
+btn.addEventListener('click', fetchJson);
+
 let source;
 let i;
-const request = {
-  method: 'GET',
-  mode: 'cors',
-  cache: 'default'
-}
+
 // funciones
 // cancion al nuevo div
 function selected() {
@@ -26,5 +36,3 @@ for (i of songs) {
   source = i.src;
   console.log(source);
 }
-
-// Fetch
