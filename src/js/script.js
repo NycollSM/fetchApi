@@ -20,3 +20,17 @@ for ( i of songs){
     source = i.src;
     console.log(source);
 }
+
+// Fetch de lyrics.json
+const btn = document.getElementById('btn');
+let letras = document.querySelector('#container');
+
+function mostrar() {
+  fetch('js/lyrics.json')
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+  })
+}
+
+btn.addEventListener('click', mostrar);
