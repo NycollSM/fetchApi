@@ -17,7 +17,6 @@ function fetchJson() {
 
 btn.addEventListener('click', fetchJson);
 
-=======
 let source;
 let i;
 const request = {
