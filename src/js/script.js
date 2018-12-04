@@ -14,6 +14,7 @@ function fetchJson() {
     })
 }
 
+console.log('prueba');
 btn.addEventListener('click', fetchJson);
 
 let source;
