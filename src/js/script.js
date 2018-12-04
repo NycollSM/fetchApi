@@ -1,22 +1,30 @@
+// variables
 const songs = document.getElementsByTagName('audio');
 console.log(songs);
 const div = document.getElementById('contentsongs');
+let source;
 let i;
-let source = i.src;
-
+const request = {
+  method: 'GET',
+  mode: 'cors',
+  cache: 'default'
+}
+// funciones
 // cancion al nuevo div
-function selected(){ // eslint-disable-line
+function selected() {
   const newSong = document.createElement('audio');
-  newSong.setAttribute('src', source);
+  newSong.setAttribute('scr', source);
   newSong.setAttribute('controls', true);
   div.appendChild(newSong);
+  console.log(newSong);
 }
 
 // Eventos
-
-// recorre todas las canciones y con esto la funcion select va a agregar la cancion seleccionada al otro div
-for ( i of songs){
-    i.addEventListener('click' , selected);
-    source = i.src;
-    console.log(source);
+// recorre todas las canciones
+for (i of songs) {
+  i.addEventListener('play', selected);
+  source = i.src;
+  console.log(source);
 }
+
+// Fetch
