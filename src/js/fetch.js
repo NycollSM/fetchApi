@@ -1,8 +1,6 @@
-const boton = document.getElementById('btn-anim');
 // variables
-const songs = document.getElementsByTagName('audio');
+const boton = document.getElementById('btn-anim');
 const mainContainer = document.getElementById('main-content');
-console.log(songs);
 const list = document.getElementById('songs');
 const contentLyrics = document.getElementById('contentlyrics');
 
@@ -19,8 +17,8 @@ function animation() {
 function SongsF() {
   fetch('js/lyrics.json')
     .then(respuesta => respuesta.json())
-    .then(datos => { // eslint-disable-line
-      for (let items of datos) {
+    .then((datos) => { // eslint-disable-line
+      for (const items of datos) {
         const contSongs = document.createElement('div');
         const NameSongs = document.createElement('p');
         NameSongs.innerHTML = items.name;
@@ -30,15 +28,15 @@ function SongsF() {
         contSongs.appendChild(songs);
         list.appendChild(contSongs);
         // for que recorre los div
-        function selected() {
+        function selected() {  // eslint-disable-line
           contentLyrics.appendChild(songs);
           contentLyrics.appendChild(NameSongs);
         }
         console.log(contSongs);
 
-        //evento de cancion
+        // evento de cancion
         contSongs.addEventListener('click', selected);
-        //contSongs.addEventListener('click', fetchJson);
+        // contSongs.addEventListener('click', fetchJson);
         // lyrics
         for (let lyric in items.lyrics) { // eslint-disable-line
           // console.log(a.lyrics[lyric]);
@@ -49,7 +47,7 @@ function SongsF() {
         }
       }
       console.log(datos);
-  });
+    });
 }
 
 boton.addEventListener('click', SongsF);
