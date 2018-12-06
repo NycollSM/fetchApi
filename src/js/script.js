@@ -52,32 +52,47 @@ const btn = document.getElementById('btn');
   console.log(parrafo);
 } */
 
+// Función que realiza el fetch con las latras de la canción 
+
 const container = document.getElementById('container');
 const btn = document.getElementById('btn');
-let x = 0;
+let i = 0;
+
 
 function fetchJson() {
   fetch('js/lyrics.json')
     .then(res => res.json())
     .then(data => {
-    let respuesta = data[x].lyrics[0];
+    let respuesta = data[i].lyrics[0];
       //console.log(respuesta);
       for (l of data) {
         console.log(l);
-        for (let lyric in data[x].lyrics) {
-          lyric.innerText;
-          let parrafo = lyric;
-          parrafo = document.createElement('p');
-          // parrafo.innerText += data[i].lyrics[l];
-          console.log(lyric);
+        for (let lyric in data[i].lyrics) {
+          function agregoDom() {
+            lyric = document.querySelectorAll('p');
+            lyric.innerText;
+            let parrafo = lyric;
+            //parrafo = document.createElement('p');
+            // parrafo.innerText += data[i].lyrics[l];
+            console.log(lyric);
+            console.log(parrafo);
+            container.appendChild(parrafo);
+            /*let p = l.innerText; 
+            let parrafo = document.createElement('p');
+            parrafo.innerHTML = p;
+            container.appendChild(parrafo);*/
+          } 
         }
-        /*let p = l.innerText; 
-        let parrafo = document.createElement('p');
-        parrafo.innerHTML = p;
-      container.appendChild(parrafo);*/
+        function time() {
+          pedido = setTimeout(agregoDom, 8000);
+          console.log(pedido);
+        }
       }
     })
 }
+
+const pedido = fetchJson();
+
 
 // muestra las letras en la consola
 btn.addEventListener('click', fetchJson);
