@@ -2,13 +2,18 @@
   {
     "name": "No woman",
     "lyrics":{
-      "1": "I left drinking on the city train To spend some time on the road Then one morning I woke up in LA Caught my breath on the coast I've been going through a change I might never be sure I'm just walking in a haze I'm not ready to turn",
-      "2": "No woman No woman",
-      "3": "Midnight driving through the bay Going back on the road Coming up and I wish I could stay I've been sleeping alone I've been going through a change I might never be sure I'm just walking in a haze I'm not ready to turn",
-      "4": "No woman No woman",
-      "5": "I left drinking on the city train To spend some time on the road",
+      "1": "I left drinking on the city train To spend some time on the road",
+      "2": "Then one morning I woke up in LA Caught my breath on the coast",
+      "3": "I've been going through a change I might never be sure",
+      "4": "I'm just walking in a haze I'm not ready to turn",
+      "5": "No woman No woman",
+      "6": "Midnight driving through the bay Going back on the road Coming up and",
+      "7": "I wish I could stay I've been sleeping alone I've been going through a change",
+      "8": "I might never be sure I'm just walking in a haze I'm not ready to turn",
+      "9": "No woman No woman",
+      "10": "I left drinking on the city train To spend some time on the road"
     },
-    "singer": "gato"
+    "singer": "Whitney"
   },
   {
     "name": "Hotel california",
@@ -60,166 +65,6 @@
       "5": "And we lost faith, oh in the arms of love (Love love love)",
       "6": "Where you been hiding lately, where you been hiding from the news? Cause we've been fighting lately, we've been fighting with the wolves. With the wolves. With the wolves. Red tongues and hands. Oh, we lost faith in the arms of love. (Love love love love love love)",
       "7": "Red tongues and hands."
-    },
-    "singer": ""
-  },
-  {
-    "name": "",
-    "lyrics": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
-      "10": ""
-    },
-    "singer": ""
-  },
-  {
-    "name": "",
-    "lyrics": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
-      "10": ""
-    },
-    "singer": ""
-  },
-  {
-    "name": "",
-    "lyrics": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
-      "10": ""
-    },
-    "singer": ""
-  },
-  {
-    "name": "",
-    "lyrics": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
-      "10": ""
-    },
-    "singer": ""
-  },
-  {
-    "name": "",
-    "lyrics": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
-      "10": ""
-    },
-    "singer": ""
-  },
-  {
-    "name": "",
-    "lyrics": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
-      "10": ""
-    },
-    "singer": ""
-  },
-  {
-    "name": "",
-    "lyrics": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
-      "10": ""
-    },
-    "singer": ""
-  },
-  {
-    "name": "",
-    "lyrics": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
-      "10": ""
-    },
-    "singer": ""
-  },
-  {
-    "name": "",
-    "lyrics": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
-      "10": ""
-    },
-    "singer": ""
-  },
-  {
-    "name": "",
-    "lyrics": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
-      "10": ""
     },
     "singer": ""
   }
