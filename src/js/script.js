@@ -7,7 +7,6 @@ let source;
 let i;
 // Fetch de lyrics.json
 const btn = document.getElementById('btn');
-console.log('prueba');
 
 // funciones
 // cancion al nuevo div
@@ -26,21 +25,14 @@ function fetchJson() {
     console.log(data);
   })
 }
-// fetch canciones
-function SongsF() {
-  fetch(js/songs.json)
-    .then(response => response.json())
-    .then(song =>{
-      console.log(song);
-  })
-}
+
 // Eventos
 // recorre todas las canciones
 for (i of songs) {
   i.addEventListener('play', selected);
   source = i.src;
-  console.log(source);
+  //console.log(source);
 }
 // muestra las letras en la consola
 btn.addEventListener('click', fetchJson);
-mainContainer.addEventListener('load',SongsF);
+
