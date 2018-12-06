@@ -1,36 +1,25 @@
 [
   {
-    "name": "No woman",
-    "lyrics":{
-      "1": "I left drinking on the city train To spend some time on the road",
-      "2": "Then one morning I woke up in LA Caught my breath on the coast",
-      "3": "I've been going through a change I might never be sure",
-      "4": "I'm just walking in a haze I'm not ready to turn",
-      "5": "No woman No woman",
-      "6": "Midnight driving through the bay Going back on the road Coming up and",
-      "7": "I wish I could stay I've been sleeping alone I've been going through a change",
-      "8": "I might never be sure I'm just walking in a haze I'm not ready to turn",
-      "9": "No woman No woman",
-      "10": "I left drinking on the city train To spend some time on the road"
-    },
-    "singer": "Whitney"
-  },
-  {
-    "name": "Hotel california",
-    "lyrics":{
-      "1": "On a dark desert highway, cool wind in my hair Warm smell of colitas, rising up through the air Up ahead in the distance, I saw a shimmering light My head grew heavy and my sight grew dim I had to stop for the night There she stood in the doorway I heard the mission bell And I was thinking to myself This could be Heaven or this could be Hell Then she lit up a candle and she showed me the way There were voices down the corridor I thought I heard them say",
-      "2": "Welcome to the Hotel California Such a lovely place (Such a lovely place) Such a lovely face Plenty of room at the Hotel California Any time of year (Any time of year) You can find it here",
-      "3": "Her mind is Tiffany-twisted, she got the Mercedes bends She got a lot of pretty, pretty boys she calls friends How they dance in the courtyard, sweet summer sweat Some dance to remember, some dance to forget",
-      "4": "So I called up the Captain Please bring me my wine. He said, We haven't had that spirit here since nineteen sixty nine. And still those voices are calling from far away Wake you up in the middle of the night Just to hear them say",
-      "5": "I left drinking on the city train To spend some time on the road",
-      "6": "Welcome to the Hotel California Such a lovely place (Such a lovely place) Such a lovely face They livin' it up at the Hotel California What a nice surprise (what a nice surprise) Bring your alibis",
-      "7": "Mirrors on the ceiling The pink champagne on ice And she said We are all just prisoners here, of our own device And in the master's chambers They gathered for the feast They stab it with their steely knives But they just can't kill the beast ",
-      "8": "Last thing I remember I was running for the door I had to find the passage back to the place I was before Relax, said the night man We are programmed to receive You can check-out any time you like But you can never leave!"
-    },
-    "singer": "gato"
+  "name": "no woman",
+  "singer": "Whitney",
+  "song": "songs/NoWoman.mp3",
+  "lyrics": {
+    "1": "I left drinking on the city train To spend some time on the road",
+    "2": "Then one morning I woke up in LA Caught my breath on the coast",
+    "3": "I've been going through a change I might never be sure",
+    "4": "I'm just walking in a haze I'm not ready to turn",
+    "5": "No woman No woman",
+    "6": "Midnight driving through the bay Going back on the road Coming up and",
+    "7": "I wish I could stay I've been sleeping alone I've been going through a change",
+    "8": "I might never be sure I'm just walking in a haze I'm not ready to turn",
+    "9": "No woman No woman",
+    "10": "I left drinking on the city train To spend some time on the road"
+  }
   },
   {
     "name": "Mercy",
+    "singer": "Shawn Mendez",
+    "song": "songs/Mercy.mp3",
     "lyrics": {
       "1": "You've got a hold of me Don't even know your power I stand a hundred feet But I fall when I'm around you",
       "2": "Show me an open door Then you go and slam it on me I can't take anymore I'm saying baby",
@@ -40,23 +29,44 @@
       "6": "Please have mercy on me Take it easy on my heart Even though you don't mean to hurt me You keep tearing me apart Would you please have mercy on me I'm a puppet on your strings And even though you got good intentions I need you to set me free Would you please have mercy, mercy on my heart Would you please have mercy, mercy on my heart",
       "7": "Consuming all the air inside my lungs Ripping all the skin from off my bones I'm prepared to sacrifice my life I would gladly do it twice Consuming all the air inside my lungs Ripping all the skin from off my bones I'm prepared to sacrifice my life I would gladly do it twice",
       "8": "Oh, please have mercy on me Take it easy on my heart Even though you don't mean to hurt me You keep tearing me apart Would you please have mercy on me I'm a puppet on your string And even though you got good intentions I need you to set me free I'm begging you for mercy, mercy (on my heart) I'm begging you, begging you please baby I'm begging you for mercy, mercy (on my heart) Oh, I'm begging you, I'm begging you, yeah"
-    },
-    "singer": "Shawn Mendes"
+    }
   },
   {
-    "name": "Like a stone",
+    "name":"Hotel California",
+    "singer": "Eagles",
+    "song":"songs/HotelCalifornia.mp3",
+    "lyrics":{
+      "1": "On a dark desert highway, cool wind in my hair Warm smell of colitas, rising up through the air Up ahead in the distance, I saw a shimmering light My head grew heavy and my sight grew dim I had to stop for the night There she stood in the doorway I heard the mission bell And I was thinking to myself This could be Heaven or this could be Hell Then she lit up a candle and she showed me the way There were voices down the corridor I thought I heard them say",
+      "2": "Welcome to the Hotel California Such a lovely place (Such a lovely place) Such a lovely face Plenty of room at the Hotel California Any time of year (Any time of year) You can find it here",
+      "3": "Her mind is Tiffany-twisted, she got the Mercedes bends She got a lot of pretty, pretty boys she calls friends How they dance in the courtyard, sweet summer sweat Some dance to remember, some dance to forget",
+      "4": "So I called up the Captain Please bring me my wine. He said, We haven't had that spirit here since nineteen sixty nine. And still those voices are calling from far away Wake you up in the middle of the night Just to hear them say",
+      "5": "I left drinking on the city train To spend some time on the road",
+      "6": "Welcome to the Hotel California Such a lovely place (Such a lovely place) Such a lovely face They livin' it up at the Hotel California What a nice surprise (what a nice surprise) Bring your alibis",
+      "7": "Mirrors on the ceiling The pink champagne on ice And she said We are all just prisoners here, of our own device And in the master's chambers They gathered for the feast They stab it with their steely knives But they just can't kill the beast ",
+      "8": "Last thing I remember I was running for the door I had to find the passage back to the place I was before Relax, said the night man We are programmed to receive You can check-out any time you like But you can never leave!"
+    }
+  },
+  {
+    "name":"No Vuelvas a Japon",
+    "singer": "Carlos Sadness",
+    "song":"songs/NoVuelvasaJapon.mp3",
     "lyrics": {
-      "1": "On a cobweb afternoon, In a room full of emptiness By a freeway I confess I was lost in the pages of a book full of death; Reading how we'll die alone. And if we're good we'll lay to rest, Anywhere we wanna go.",
-      "2": "In your house I long to be; Room by room patiently, I'll wait for you there like a stone. I'll wait for you there alone.",
-      "3": "And on my deathbed I will pray to the gods and the angels, Like a pagan to anyone who will take me to heaven; To a place I recall, I was there so long ago. The sky was bruised, the wine was bled, and there you led me on.",
-      "4": "In your house I long to be; Room by room, patiently, I'll wait for you there like a stone. I'll wait for you there alone, alone.",
-      "5": "And on I read until the day was gone; And I sat in regret of all the things I've done; For all that I've blessed, and all that I've wronged. In dreams until my death I will wander on.",
-      "6": "In your house I long to be; Room by room, patiently, I'll wait for you there like a stone. I'll wait for you there alone, alone."
-    },
-    "singer": "Audioslave"
+      "1": "Al volver atrás me he dado cuenta De que estoy mejor de lo que te Explicaba en mi canción de amor Que fue número uno en Japón Ya ves, aquí todos me entienden menos yo",
+      "2": "¿Y qué le voy a hacer si es una Explosión que sale de tu voz Directa al corazón?",
+      "3": "Hoy han vuelto los fantasmas a ocupar Tu lado en la cama No te vayas nunca o volverán las dudas A ocupar tu lado en la cama",
+      "4": "Imagínate, será por accidente Volveré a correr a cámara lenta y Al revés sin ver a dónde me dirijo Solo oliéndote, me han dicho que el miedo huele bien",
+      "5": "Y aunque tú te resistas Te enseñaré mis sueños más hiperrealistas Aquellos donde somos más de lo que te imaginas Volveremos a Japón Para que nadie salve nuestras vidas",
+      "6": "¿Y qué le voy a hacer si es Una explosión que sale de tu voz Directa a mi corazón?",
+      "7": "Hoy han vuelto los fantasmas a ocupar Tu lado en la cama No te vayas nunca o volverán las dudas A ocupar tu lado en la cama",
+      "8": "Me he alejado tanto que no puedo verlo Es la miopía que me deja tu recuerdo No pude arreglarlo, tuve que romperlo Ahora me deslumbra tu luz en movimiento",
+      "9": "Tu luz en movimiento Tu luz en movimiento Tu luz en movimiento Tu luz en movimiento Tu luz en movimiento Tu luz... En movimiento",
+      "10": "Tu luz en movimiento Tu luz en movimiento Ahora me deslumbra tu luz en movimiento Tu luz en movimiento Tu luz en movimiento Tu luz en movimiento..."
+    }
   },
   {
-    "name": "The wolves",
+    "name": "The Wolves",
+    "singer": "Ben Howard",
+    "song": "songs/TheWolves.mp3",
     "lyrics": {
       "1": "Falling from high places, falling through lost spaces, Now that we're lonely, now that there's nowhere to go. Watching from both sides, these clock towers burning up, I lost my time here, I lost my patience with it all.",
       "2": "And we lost faith, in the arms of love.",
@@ -65,7 +75,6 @@
       "5": "And we lost faith, oh in the arms of love (Love love love)",
       "6": "Where you been hiding lately, where you been hiding from the news? Cause we've been fighting lately, we've been fighting with the wolves. With the wolves. With the wolves. Red tongues and hands. Oh, we lost faith in the arms of love. (Love love love love love love)",
       "7": "Red tongues and hands."
-    },
-    "singer": ""
+    }
   }
 ]

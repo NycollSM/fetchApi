@@ -1,4 +1,10 @@
 const boton = document.getElementById('btn-anim');
+// variables
+const songs = document.getElementsByTagName('audio');
+const mainContainer = document.getElementById('main-content');
+console.log(songs);
+const list = document.getElementById('songs');
+const contentLyrics = document.getElementById('contentlyrics');
 
 // animacion principal
 function animation() {
@@ -11,7 +17,7 @@ function animation() {
 }
 // fetch canciones
 function SongsF() {
-  fetch('js/song.json')
+  fetch('js/lyrics.json')
     .then(respuesta => respuesta.json())
     .then(datos => { // eslint-disable-line
       for (let items of datos) {
@@ -25,13 +31,22 @@ function SongsF() {
         list.appendChild(contSongs);
         // for que recorre los div
         function selected() {
-          div.appendChild(songs);
-          div.appendChild(NameSongs);
+          contentLyrics.appendChild(songs);
+          contentLyrics.appendChild(NameSongs);
         }
         console.log(contSongs);
 
         //evento de cancion
-        contSongs.addEventListener('click' , selected);
+        contSongs.addEventListener('click', selected);
+        //contSongs.addEventListener('click', fetchJson);
+        // lyrics
+        for (let lyric in items.lyrics) { // eslint-disable-line
+          // console.log(a.lyrics[lyric]);
+          const el = items.lyrics[lyric];
+          const parrafo = document.createElement('p');
+          parrafo.innerHTML += `- ${el}`;
+          contentLyrics.appendChild(parrafo);
+        }
       }
       console.log(datos);
   });

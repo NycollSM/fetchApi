@@ -3,56 +3,37 @@ const songs = document.getElementsByTagName('audio');
 const mainContainer = document.getElementById('main-content');
 console.log(songs);
 const list = document.getElementById('songs');
-const div = document.getElementById('contentsongs');
-let source;
-let i;
-const btn = document.getElementById('btn');
-const container = document.getElementById('container');
-
+const contentLyrics = document.getElementById('contentlyrics');
 
 // funciones
 // cancion al nuevo div
 
 // Fetch de letras
+
+const btn = document.getElementById('btn');
+let x = 0;
+
 function fetchJson() {
   fetch('js/lyrics.json')
     .then(res => res.json())
-    .then(data => { // eslint-disable-line
-      let respuesta = data[0].lyrics;
-      console.log(respuesta);
-      const lyrics = document.createElement('div');
-      for (const l of data.name) {
-        console.log(l);
-        const parrafo = document.createElement('p');
-        for (consta in l.lyrics) {
-          parrafo.innerHTML += res.lyrics[l];
+    .then((data) => {
+      for (const a of data) {
+        for (let lyric in a.lyrics) { // eslint-disable-line
+          // console.log(a.lyrics[lyric]);
+          const el = a.lyrics[lyric];
+          const parrafo = document.createElement('p');
+          parrafo.innerHTML += `- ${el}`;
+          contentLyrics.appendChild(parrafo);
         }
-        lyrics.appendChild(parrafo);
       }
-      container.appendChild(lyrics);
-      console.log(parrafo);
-      console.log(res);
-    })
+    });
 }
 
-/*function addLyrics() {
-  const lyrics = document.createElement('div');
-  for (const l of res.data.name) {
-    console.log(l);
-    parrafo.innerHTML += res.lyrics[l];
-  }
-  lyrics.appendChild(parrafo);
-  container.appendChild(lyrics);
-  console.log(parrafo);
-} */
-
-
-// Eventos
-// recorre todas las canciones
-for (i of songs) {
-  // i.addEventListener('play', m);
-  source = i.src;
-  //console.log(source);
+let pedido = fetchJson();
+function time() {
+  pedido = setTimeout(addLyrics(), 8000);
+  console.log(pedido);
 }
+
 // muestra las letras en la consola
-btn.addEventListener('click', fetchJson);
+//btn.addEventListener('click', fetchJson);
