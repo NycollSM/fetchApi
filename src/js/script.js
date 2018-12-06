@@ -52,24 +52,30 @@ const btn = document.getElementById('btn');
   console.log(parrafo);
 } */
 
+const container = document.getElementById('container');
+const btn = document.getElementById('btn');
+let x = 0;
+
 function fetchJson() {
   fetch('js/lyrics.json')
     .then(res => res.json())
     .then(data => {
-    let respuesta = data[0].lyrics;
-      console.log(respuesta);
-      const lyrics = document.createElement('div');
-      for (const l of data.name) {
+    let respuesta = data[x].lyrics[0];
+      //console.log(respuesta);
+      for (l of data) {
         console.log(l);
-        const parrafo = document.createElement('p');
-        for (consta in l.lyrics) {
-          parrafo.innerHTML += res.lyrics[l];
+        for (let lyric in data[x].lyrics) {
+          lyric.innerText;
+          let parrafo = lyric;
+          parrafo = document.createElement('p');
+          // parrafo.innerText += data[i].lyrics[l];
+          console.log(lyric);
         }
-        lyrics.appendChild(parrafo);
+        /*let p = l.innerText; 
+        let parrafo = document.createElement('p');
+        parrafo.innerHTML = p;
+      container.appendChild(parrafo);*/
       }
-      container.appendChild(lyrics);
-      console.log(parrafo);
-      console.log(res);
     })
 }
 
