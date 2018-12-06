@@ -1,0 +1,22 @@
+[
+  {
+  "name": "no woman",
+  "song": "songs/NoWoman.mp3"
+  },
+  {
+    "name": "Mercy",
+    "song": "songs/Mercy.mp3"
+  },
+  {
+    "name":"Hotel California",
+    "song":"songs/HotelCalifornia.mp3"
+  },
+  {
+    "name":"No Vuelvas a Japon",
+    "song":"songs/NoVuelvasaJapon.mp3"
+  },
+  {
+    "name": "The Wolves",
+    "song": "songs/TheWolves.mp3"
+  }
+]
