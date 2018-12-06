@@ -1,8 +1,7 @@
 body {
   font-size: 'Montserrat', sans-serif;
-  background-image: url("../img/bg.jpg");
-  background-repeat: repeat;
-  color: #2da5b4; }
+  background-image: url("../img/flores1.png");
+  color: #da918b; }
 
 .allcontent {
   width: 1100px;
@@ -18,14 +17,19 @@ body {
 #contentsongs {
   width: 58%;
   margin: 2%;
-  border: 2px solid #010202; }
+  padding: 2%;
+  background: #abd4ee6e;
+  color: black; }
 
 #songs {
   float: right;
   display: block;
   text-align: center;
-  width: 28%;
-  border-bottom: 1px solid black; }
+  width: 28%; }
+
+#songs p {
+  background: #deebf3;
+  padding: 2%; }
 
 audio {
   padding: 5%;

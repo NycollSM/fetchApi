@@ -12,19 +12,13 @@ const container = document.getElementById('container');
 
 // funciones
 // cancion al nuevo div
-function selected() {
-  const newSong = document.createElement('audio');
-  newSong.setAttribute('scr', source);
-  newSong.setAttribute('controls', true);
-  div.appendChild(newSong);
-  console.log(newSong);
-}
+
 // Fetch de letras
 function fetchJson() {
   fetch('js/lyrics.json')
     .then(res => res.json())
-    .then(data => {
-    let respuesta = data[0].lyrics;
+    .then(data => { // eslint-disable-line
+      let respuesta = data[0].lyrics;
       console.log(respuesta);
       const lyrics = document.createElement('div');
       for (const l of data.name) {
@@ -56,7 +50,7 @@ function fetchJson() {
 // Eventos
 // recorre todas las canciones
 for (i of songs) {
-  i.addEventListener('play', selected);
+  // i.addEventListener('play', m);
   source = i.src;
   //console.log(source);
 }
