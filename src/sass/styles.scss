@@ -1,14 +1,15 @@
-.main-content{
+#main-content{
   width: 1100px;
   padding: 2% 0;
   margin: 0 auto;
+  display: none;
 }
 #contentsongs{
   width: 58%;
   margin: 2%;
   border: 2px solid turquoise;
 }
-.songs {
+#songs {
   float: right;
   display: block;
   border: 2px solid #43a79d;
@@ -17,4 +18,10 @@
 audio{
   margin: 2%;
   display: block;
+}
+#showing{
+  display: block;
+}
+.hide-btn{
+  display: none;
 }

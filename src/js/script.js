@@ -1,13 +1,14 @@
 // variables
 const songs = document.getElementsByTagName('audio');
-const mainContainer = document.getElementsByClassName('main-content');
+const mainContainer = document.getElementById('main-content');
 console.log(songs);
+const list = document.getElementById('songs');
 const div = document.getElementById('contentsongs');
-
 let source;
 let i;
-// Fetch de lyrics.json
 const btn = document.getElementById('btn');
+const container = document.getElementById('container');
+
 
 // funciones
 // cancion al nuevo div
@@ -19,39 +20,6 @@ function selected() {
   console.log(newSong);
 }
 // Fetch de letras
-function fetchJson() {
-  fetch('js/lyrics.json')
-    .then(res => res.json())
-    .then(data => {
-    console.log(data);
-  })
-}
-
-// Eventos
-// recorre todas las canciones
-for (i of songs) {
-  i.addEventListener('play', selected);
-  source = i.src;
-  //console.log(source);
-}
-
-
-// Fetch de lyrics.json
-const container = document.getElementById('container');
-const btn = document.getElementById('btn');
-
-
-/*function addLyrics() {
-  const lyrics = document.createElement('div');
-  for (const l of res.data.name) {
-    console.log(l);
-    parrafo.innerHTML += res.lyrics[l];
-  }
-  lyrics.appendChild(parrafo);
-  container.appendChild(lyrics);
-  console.log(parrafo);
-} */
-
 function fetchJson() {
   fetch('js/lyrics.json')
     .then(res => res.json())
@@ -73,5 +41,24 @@ function fetchJson() {
     })
 }
 
+/*function addLyrics() {
+  const lyrics = document.createElement('div');
+  for (const l of res.data.name) {
+    console.log(l);
+    parrafo.innerHTML += res.lyrics[l];
+  }
+  lyrics.appendChild(parrafo);
+  container.appendChild(lyrics);
+  console.log(parrafo);
+} */
+
+
+// Eventos
+// recorre todas las canciones
+for (i of songs) {
+  i.addEventListener('play', selected);
+  source = i.src;
+  //console.log(source);
+}
 // muestra las letras en la consola
 btn.addEventListener('click', fetchJson);
