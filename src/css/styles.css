@@ -1,28 +1,51 @@
-#main-content {
+body {
+  font-size: 'Montserrat', sans-serif;
+  background-image: url("../img/bg.jpg");
+  background-repeat: repeat;
+  color: #2da5b4; }
+
+.allcontent {
   width: 1100px;
   padding: 2% 0;
   margin: 0 auto;
-  display: none; }
+  text-align: center; }
+
+#main-content {
+  margin: 0 auto;
+  display: none;
+  text-align: center; }
 
 #contentsongs {
   width: 58%;
   margin: 2%;
-  border: 2px solid turquoise; }
+  border: 2px solid #010202; }
 
 #songs {
   float: right;
   display: block;
-  border: 2px solid #43a79d;
-  width: 28%; }
+  text-align: center;
+  width: 28%;
+  border-bottom: 1px solid black; }
 
 audio {
-  margin: 2%;
-  display: block; }
+  padding: 5%;
+  border-bottom: 1px solid black; }
 
 #showing {
   display: block; }
 
 .hide-btn {
   display: none; }
+
+.content-btn {
+  margin: 0 auto;
+  text-align: center; }
+
+#btn-anim {
+  height: 100px;
+  width: 50%;
+  font-size: 32px;
+  border: #000000 2px solid;
+  background: transparent; }
 
 /*# sourceMappingURL=styles.css.map */
