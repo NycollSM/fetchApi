@@ -18,11 +18,7 @@ function SongsF() {
   fetch('js/lyrics.json')
     .then(respuesta => respuesta.json())
     .then((datos) => { // eslint-disable-line
-<<<<<<< HEAD
       for (let items of datos) {
-=======
-      for (const items of datos) {
->>>>>>> 9cb710e4cba4aefd47576dc51bc549a3c33f828d
         const contSongs = document.createElement('div');
         const NameSongs = document.createElement('p');
         NameSongs.innerHTML = items.name;
