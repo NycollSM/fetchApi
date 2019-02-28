@@ -1,11 +1,10 @@
-const boton = document.getElementById('btn-anim');
 // variables
-const songs = document.getElementsByTagName('audio');
+const boton = document.getElementById('btn-anim');
 const mainContainer = document.getElementById('main-content');
 console.log(songs);
 const list = document.getElementById('songs');
 const contentLyrics = document.getElementById('contentlyrics');
-
+let i;
 // animacion principal
 function animation() {
   mainContainer.id = 'showing';
@@ -19,7 +18,7 @@ function animation() {
 function SongsF() {
   fetch('js/lyrics.json')
     .then(respuesta => respuesta.json())
-    .then(datos => { // eslint-disable-line
+    .then((datos) => { // eslint-disable-line
       for (let items of datos) {
         const contSongs = document.createElement('div');
         const NameSongs = document.createElement('p');
@@ -29,10 +28,14 @@ function SongsF() {
         contSongs.appendChild(NameSongs);
         contSongs.appendChild(songs);
         list.appendChild(contSongs);
+        const lyrick = document.createElement('p');
+        lyrick.innerHTML = items.lyrics.i;
+        //console.log(items.lyrics);
         // for que recorre los div
         function selected() {
           contentLyrics.appendChild(songs);
           contentLyrics.appendChild(NameSongs);
+          contentLyrics.appendChild(lyrick);
         }
         console.log(contSongs);
 
@@ -40,9 +43,9 @@ function SongsF() {
         contSongs.addEventListener('click', selected);
         //contSongs.addEventListener('click', fetchJson);
         // lyrics
-        for (let lyric in items.lyrics) { // eslint-disable-line
+        for (i in items.lyrics) { // eslint-disable-line
           // console.log(a.lyrics[lyric]);
-          const el = items.lyrics[lyric];
+          const el = items.lyrics[i];
           const parrafo = document.createElement('p');
           parrafo.innerHTML += `- ${el}`;
           contentLyrics.appendChild(parrafo);
