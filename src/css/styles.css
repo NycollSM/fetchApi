@@ -59,9 +59,12 @@ audio {
   font-size: 26px;
   border: none;
   background: #67074daf;
-  color: #dd9933; }
+  color: #dd9933;
+  border-bottom: 4px solid #67074dda;
+  border-radius: 5px; }
   #btn-anim:hover {
     background: #dd9933a6;
+    border-bottom: 4px solid #dd9933ea;
     color: #67074E;
     transition: 1.5s; }
 
